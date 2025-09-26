@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Abbonamento Palestra</title>
+</head>
+<body>
+    <h2>Calcola il prezzo annuale della palestra</h2>
+    <form action="palestra.php" method="post">
+        <label>Nome:</label>
+        <input type="text" name="nome" required><br><br>
+
+        <label>Età:</label>
+        <input type="number" name="eta" min="1" required><br><br>
+
+        <label>Frequenza di pagamento:</label>
+        <select name="pagamento" required>
+            <option value="mensile">Mensile</option>
+            <option value="bimestrale">Bimestrale</option>
+            <option value="trimestrale">Trimestrale</option>
+            <option value="annuale">Annuale</option>
+        </select><br><br>
+
+        <input type="submit" value="Calcola">
+    </form>
+</body>
+</html>
